@@ -23,7 +23,20 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 // Then we add our 'graymap' tile layer to the map.
 streets.addTo(map);
 
+// An array containing each city's location, state, and population.
+// Get data from cities.js
+let cityData = cities;
 
-
+cityData.forEach(function(city) {
+    console.log(city)
+    L.circleMarker(city.location, {
+        radius: city.population/200000,
+        color: "orange",
+        fillColor: "#ffffa1",
+        lineweight: 4
+    })
+    .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
+    .addTo(map);
+});
 
 
