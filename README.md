@@ -1,13 +1,17 @@
 # Mapping_Earthquakes
 
-###Streets Map
+### Toggle
+
+![legend](Resources/legend_toggle.png)
+
+### Streets Map
 
 ![Streets](Resources/streets_3.png)
 
-###Satellite Map
+### Satellite Map
 
 ![Satellite](Resources/satellite.png)
 
-###Dark Map
+### Dark Map
 
 ![Dark](Resources/dark.png)
